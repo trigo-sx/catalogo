@@ -1,0 +1,281 @@
+{
+    "vibradores": {
+        "categoria": "Vibradores",
+        "itens": [
+            {
+                "id": "vibra-1",
+                "descricao": "Vibrador Golfinho",
+                "preco": 25,
+                "imagem": "./assets/produtos/vibra-1.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "vibra-2",
+                "descricao": "VVibrador Ponto G Com 8 Vibrações",
+                "preco": 45,
+                "imagem": "./assets/produtos/vibra-2.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "vibra-3",
+                "descricao": "Vibrador Bullet Estimulador",
+                "preco": 15,
+                "imagem": "./assets/produtos/vibra-3.jpeg",
+                "desconto": 0,
+                "obs": "Verificar disponibiliadade de cores"
+            }
+        ]
+    },
+    "bdsm": {
+        "categoria": "BDSM",
+        "itens": [
+            {
+                "id": "bdsm-1",
+                "descricao": "Algema em Metal",
+                "preco": 30,
+                "imagem": "./assets/produtos/bdsm-1.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "bdsm-2",
+                "descricao": "Kit Sado Algema E Chibata Em Couro Sintético",
+                "preco": 40,
+                "imagem": "./assets/produtos/bdsm-2.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "bdsm-3",
+                "descricao": "Chicote Com Tiras 50 Tons",
+                "preco": 22,
+                "imagem": "./assets/produtos/bdsm-3.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "bdsm-4",
+                "descricao": "Mordaça",
+                "preco": 20,
+                "imagem": "./assets/produtos/bdsm-4.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "bdsm-5",
+                "descricao": "Corda Erótica",
+                "preco": 20,
+                "imagem": "./assets/produtos/bdsm-5.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "bdsm-6",
+                "descricao": "Mordaça Em Bola",
+                "preco": 20,
+                "imagem": "./assets/produtos/bdsm-6.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "masturbadores": {
+        "categoria": "Masturbadores",
+        "itens": [
+            {
+                "id": "masturbador-1",
+                "descricao": "Masturbador Egg Magical",
+                "preco": 20,
+                "imagem": "./assets/produtos/masturbador-1.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "geis": {
+        "categoria": "Géis",
+        "itens": [
+            {
+                "id": "geis-1",
+                "descricao": "Lubrificante Intimo Neutro 50g Cimed",
+                "preco": 20,
+                "imagem": "./assets/produtos/geis-1.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "geis-2",
+                "descricao": "Excitante Feminino Lança Xanas 15g",
+                "preco": 19.99,
+                "imagem": "./assets/produtos/geis-2.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "geis-3",
+                "descricao": "Bolinha Excitante Hot Ball Plus Esfria",
+                "preco": 9.99,
+                "obs": "Não introduzir",
+                "imagem": "./assets/produtos/geis-3.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "geis-4",
+                "descricao": "Bolinha Excitante Hot Ball Plus Esquenta E Esfria",
+                "preco": 9.99,
+                "obs": "Não introduzir",
+                "imagem": "./assets/produtos/geis-4.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "geis-5",
+                "descricao": "Gel Aromatizante Beijável Para Virilha Blow Girl 320ml Hot Flowers",
+                "preco": 50,
+                "imagem": "./assets/produtos/geis-5.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "geis-6",
+                "descricao": "Lubrificante Íntimo Love Lub Neutro 60g La Pimienta",
+                "preco": 14.9,
+                "imagem": "./assets/produtos/geis-6.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "geis-7",
+                "descricao": "Bolinha Hot Ball Beijavel 2 Unid. Hot Flowers",
+                "preco": 9.99,
+                "obs": "Não introduzir",
+                "imagem": "./assets/produtos/geis-7.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "geis-8",
+                "descricao": "Gel Comestível Sedenta Por Oral Sachê 3g Pepper Blend",
+                "preco": 5,
+                "imagem": "./assets/produtos/geis-8.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "anal": {
+        "categoria": "Anal",
+        "itens": [
+            {
+                "id": "anal-1",
+                "descricao": "Plug Anal Vermelho Com Pedra Sexy Fantasy",
+                "preco": 35,
+                "obs": "Tamanhos e cores, entrar em contato",
+                "imagem": "./assets/produtos/anal-1.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "proteses": {
+        "categoria": "Próteses",
+        "itens": [
+            {
+                "id": "proteses-1",
+                "descricao": "Prótese Sem Vibro Com Ventosa E Escroto 18x4,4cm Sexy Fantasy",
+                "preco": 50,
+                "imagem": "./assets/produtos/proteses-1.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "acessorios": {
+        "categoria": "Acessórios",
+        "itens": [
+            {
+                "id": "acessorios-1",
+                "descricao": "Anel Peniano Com Vibrador E Estimulador De Clítoris",
+                "preco": 9.99,
+                "imagem": "./assets/produtos/acessorios-1.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "acessorios-2",
+                "descricao": "Anel Peniano Com Vibro Borboleta",
+                "preco": 9.99,
+                "imagem": "./assets/produtos/acessorios-2.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "acessorios-3",
+                "descricao": "Colar De Pérola Para Massagem Sensual",
+                "preco": 25,
+                "imagem": "./assets/produtos/acessorios-3.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "acessorios-4",
+                "descricao": "Coleira Com Algemas Em Couro Sintético",
+                "preco": 55,
+                "imagem": "./assets/produtos/acessorios-4.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "jogos": {
+        "categoria": "Jogos",
+        "itens": [
+            {
+                "id": "jogos-1",
+                "descricao": "Dado Posições Hétero 1 Un.",
+                "preco": 9.99,
+                "imagem": "./assets/produtos/jogos-1.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "jogos-2",
+                "descricao": "Dados Eróticos Romantic Dice 3 Un.",
+                "preco": 20,
+                "imagem": "./assets/produtos/jogos-2.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "jogos-3",
+                "descricao": "Dado Do Prazer Gay Simples",
+                "preco": 9.99,
+                "imagem": "./assets/produtos/jogos-3.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "jogos-4",
+                "descricao": "Dado Do Prazer Lésbico Simples ",
+                "preco": 9.99,
+                "imagem": "./assets/produtos/jogos-4.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "jogos-5",
+                "descricao": "Dado Jogo Do Prazer Hot Glow 2 Un.",
+                "preco": 14.5,
+                "imagem": "./assets/produtos/jogos-5.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "preservativos": {
+        "categoria": "Preservativos",
+        "itens": [
+            {
+                "id": "preservativos-1",
+                "descricao": "K-Misinha Invisível Com 8 Un. Cimed",
+                "preco": 22,
+                "imagem": "./assets/produtos/preservativos-1.jpeg",
+                "desconto": 0
+            },
+            {
+                "id": "preservativos-2",
+                "descricao": "Preservativo Efeito Retardante Com 3 Un. Prudence",
+                "preco": 15,
+                "imagem": "./assets/produtos/preservativos-2.jpeg",
+                "desconto": 0
+            }
+        ]
+    },
+    "outros": {
+        "categoria": "Outros",
+        "itens": [
+            {
+                "id": "outros-1",
+                "descricao": "Melzinho Do Amor 1 Unidade Sachê 10ml",
+                "preco": 25,
+                "imagem": "./assets/produtos/outros-1.jpeg",
+                "desconto": 0
+            }
+        ]
+    }
+}

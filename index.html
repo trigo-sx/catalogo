@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigo Sex Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- AppBar -->
+    <header class="app-bar">
+        <div class="app-bar-container">
+            <button id="menu-btn" class="icon-btn"><i class="fas fa-bars"></i></button>
+            <div id="app-bar-title">
+                <img src="./assets/logo.png" alt="Logo do sexshop em formato de trigo" class="app-bar-logo">
+                <!-- <h1 class="app-bar-title">Titulo</h1> -->
+            </div>
+            <div class="app-bar-actions">
+                <!-- <button id="search-toggle" class="icon-btn"><i class="fas fa-search"></i></button> -->
+                <button id="btn-carrinho-appbar" class="icon-btn cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="badge-carrinho" class="badge">0</span>
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Drawer lateral -->
+    <div id="drawer" class="drawer">
+        <div class="drawer-header">
+            <h2>Categorias</h2>
+            <button id="close-drawer" class="icon-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <ul id="categorias-drawer" class="drawer-list"></ul>
+        <script>
+            fetch("./dados-produtos.json")
+                .then(response => response.json())
+                .then(dados => {
+                    const ul = document.getElementById("categorias-drawer");
+
+                    Object.entries(dados).forEach(([key, value]) => {
+                        ul.insertAdjacentHTML(
+                            "beforeend",
+                            `<li><a href="#${key}">${value.categoria}</a></li>`
+                        );
+                    });
+                })
+                .catch(err => console.error("Erro ao carregar JSON:", err));
+        </script>
+    </div>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <!-- Banner / Carrossel de promoções -->
+    <div id="banner" class="carousel">
+        <div class="slides">
+            <!-- Adicione ou remova <div class="slide"> quantos quiser -->
+            <a href="https://mercadolivre.com/sec/2oe92s1" class="slide active" style="background-image: url('./assets/imgs/banner_feromonios.jpeg');"></a>
+            <a href="https://mercadolivre.com/sec/2XcSzSm" class="slide active" style="background-image: url('./assets/imgs/banner_vibrador.jpeg');"></a>
+            <a href="https://mercadolivre.com/sec/1jNv1ne" class="slide active" style="background-image: url('./assets/imgs/banner_terapia.jpeg');"></a>
+           
+        </div>
+
+        <!-- Botões de navegação (sempre visíveis) -->
+        <button class="carousel-btn prev" aria-label="Slide anterior">&#10094;</button>
+        <button class="carousel-btn next" aria-label="Próximo slide">&#10095;</button>
+
+        <!-- Pontinhos – o JS vai criar automaticamente -->
+        <div class="dots"></div>
+    </div>
+
+    <!-- Seção "Como Chegar" – entre banner e catálogo -->
+    <section id="como-chegar" class="como-chegar">
+        <div class="container">
+            <h2>Entrega discreta</h2>
+            <p>Sabemos que você precisa de privacidade e conforto. Por isso, oferecemos entregas discretas para todos os
+                produtos.</p>
+
+            <div class="horarios">
+                <i class="fas fa-clock"></i>
+                <strong>Horário da Atendimento:</strong><br>
+                Diariamente dás 19h as 23h<br>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+    <!-- Catálogo -->
+    <div id="catalogo-section">
+        <section>
+            <h3>Catálogo</h3>
+            <input type="search" id="search-bar" placeholder="Buscar produto... ">
+        </section>
+        <div id="catalogo"></div>
+    </div>
+
+    <!-- Modal carrinho -->
+    <div id="modal-carrinho" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-modal">×</span>
+            <h2>Seu Carrinho</h2>
+            <div id="itens-carrinho"></div>
+            <p id="total-carrinho">Total: R$ 0,00</p>
+            <button id="btn-finalizar">Finalizar no WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- Modal de quantidade -->
+    <div id="modal-quantidade" class="modal">
+        <div class="modal-conteudo" style="max-width: 380px;">
+            <span class="fechar-modal-quantidade">×</span>
+            <h2 id="titulo-produto-quantidade">Adicionar ao carrinho</h2>
+
+            <div style="text-align: center; margin: 1.5rem 0;">
+                <img id="img-produto-quantidade" src="" alt="Produto"
+                    style="max-width: 140px; max-height: 140px; object-fit: contain; margin-bottom: 1rem;">
+            </div>
+
+            <p id="desc-produto-quantidade" style="text-align: center; font-size: 1.1rem; margin-bottom: 1.5rem;"></p>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin: 1.5rem 0;">
+                <button id="btn-menos-qtd" class="btn-quantidade">-</button>
+                <input type="number" id="input-quantidade" value="1" min="1" max="99"
+                    style="width: 80px; text-align: center; font-size: 1.4rem; padding: 8px; border: 2px solid #766ccd; border-radius: 8px;">
+                <button id="btn-mais-qtd" class="btn-quantidade">+</button>
+            </div>
+
+            <button id="btn-confirmar-quantidade" class="btn-adicionar"
+                style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                Adicionar × <span id="qtd-preview">1</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- https://www.instagram.com/trigo.sx -->
+
+    <!-- Floating Action Button WhatsApp -->
+    <div id="action-buttons">
+        <a href="https://www.instagram.com/trigo.sx" target="_blank" class="fab-instagram fab-button"
+            title="Nosso Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5554999736061?text=Ol%C3%A1%2C%20tudo%20bem%3F" target="_blank"
+            class="fab-whatsapp fab-button" title="Falar com a loja">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+
+    </div>
+    <script src="./js/carregar-dados.js"></script>
+</body>
+
+</html>
